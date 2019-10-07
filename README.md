@@ -9,6 +9,6 @@ I want to see a list of my bookmarks in a Bookmark Manager.
 | bookmarks | <-- display -->
 
 Database --> Model layer --> Control Layer --> View layer
-View = homepage to show list of bookmarked website 
-Control = contains the different paths - class BookmarkManager
+View = homepage to show list of bookmarks, erb :bookmarks 
+Controller = contains the different paths - class Bookmarks and app.rb file
 Model = interacts with the database and contains Ruby code - class Bookmark
