@@ -9,6 +9,12 @@ I want to see a list of my bookmarks in a Bookmark Manager.
 | bookmarks | <-- display -->
 
 Database --> Model layer --> Control Layer --> View layer
-View = homepage to show list of bookmarks, erb :bookmarks 
+View = homepage to show list of bookmarks, erb :bookmarks
 Controller = contains the different paths - class Bookmarks and app.rb file
 Model = interacts with the database and contains Ruby code - class Bookmark
+
+| Component   | Responsibility                                | Refactor                                |
+|------------ |---------------------------------------------  |---------------------------------------- |
+| Model       | Encapsulate logic with relevant data          | Encapsulate bookmark data in a class    |
+| View        | Display the result to a user                  | Show the bookmark data in a list        |
+| Controller  | Get data from the model and put in the view   | Render bookmark data into to the view
