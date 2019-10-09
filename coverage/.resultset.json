@@ -1,7 +1,17 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/database_helpers_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/features/create_bookmark_spec.rb": [
+        1,
         1,
         1,
         1,
@@ -20,7 +30,7 @@
         null
       ],
       "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/features/viewing_bookmarks_spec.rb": [
-        null,
+        1,
         null,
         1,
         1,
@@ -39,16 +49,8 @@
       ],
       "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/unit/bookmark_spec.rb": [
         1,
-        null,
         1,
         null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
         null,
         1,
         null,
@@ -56,18 +58,34 @@
         1,
         1,
         null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         null,
         1,
         1,
         1,
+        1,
         null,
+        1,
+        1,
+        1,
         1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1570626129
+    "timestamp": 1570630113
   }
 }
