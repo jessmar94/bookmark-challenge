@@ -37,3 +37,8 @@ So that I can save a website
 I would like to add the site's address and title to bookmark manager
 
 | bookmark | <-- add
+
+# User Story 3
+As a user,
+So that I can remove a bookmark
+I would like to add a delete button that removes bookmarks

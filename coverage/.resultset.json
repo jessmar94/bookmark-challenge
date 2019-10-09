@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/database_helpers_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/bookmark-challenge/spec/database_helpers_spec.rb": [
         1,
         null,
         1,
@@ -10,7 +10,7 @@
         1,
         null
       ],
-      "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/features/create_bookmark_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/bookmark-challenge/spec/features/create_bookmark_spec.rb": [
         1,
         1,
         1,
@@ -21,7 +21,20 @@
         null,
         null
       ],
-      "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/features/homepage_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/bookmark-challenge/spec/features/deleting_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/bookmark-challenge/spec/features/homepage_spec.rb": [
         1,
         1,
         1,
@@ -29,7 +42,7 @@
         null,
         null
       ],
-      "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/features/viewing_bookmarks_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/bookmark-challenge/spec/features/viewing_bookmarks_spec.rb": [
         1,
         null,
         1,
@@ -47,7 +60,7 @@
         null,
         null
       ],
-      "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/unit/bookmark_spec.rb": [
+      "/Users/duncanskinner/Documents/makers_academy/course/week_4/bookmark-challenge/spec/unit/bookmark_spec.rb": [
         1,
         1,
         null,
@@ -78,6 +91,21 @@
         1,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
         1,
         1,
         1,
@@ -86,6 +114,6 @@
         null
       ]
     },
-    "timestamp": 1570630396
+    "timestamp": 1570635326
   }
 }
