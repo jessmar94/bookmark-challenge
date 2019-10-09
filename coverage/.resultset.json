@@ -1,6 +1,16 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/features/create_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/features/homepage_spec.rb": [
         1,
         1,
@@ -13,8 +23,6 @@
         1,
         null,
         1,
-        1,
-        null,
         1,
         null,
         1,
@@ -49,9 +57,17 @@
         1,
         null,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1570550022
+    "timestamp": 1570613150
   }
 }
