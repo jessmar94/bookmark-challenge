@@ -1,4 +1,4 @@
-require 'pg'
+#require 'pg' - not needed as spec_helper is requiring setup_test_database, which requires pg ? 
 
 feature 'Viewing Bookmarks' do
   scenario 'User can see all bookmarks' do
