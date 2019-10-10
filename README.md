@@ -52,7 +52,7 @@ I would like to add a delete button that removes bookmarks
 User flow:
 1. Visit bookmarks page
 2. Click a delete button next to a bookmark
-3. See the bookmarks page without that bookmark 
+3. See the bookmarks page without that bookmark
 
 # User Story 4
 As a user
@@ -63,3 +63,13 @@ User flow:
 1. Visit 'update bookmark' form for a particular bookmark
 2. Fill in the form with new data and submit it
 3. See the homepage with the updated title/url
+
+# User Story 5
+As a user
+So I don't enter an invalid URL
+I want to see an error message when I enter an invalid URL
+
+User flow:
+1. Visit the new bookmark page
+2. Submit a new bookmark with an invalid url
+3. See an error message and don't see the invalid bookmark in the full list of bookmarks 

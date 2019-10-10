@@ -9,5 +9,6 @@ gem "nokogiri", ">= 1.10.4"
 gem "pg"
 gem "rspec"
 gem "sinatra"
+gem "sinatra-flash"
 gem 'simplecov', require: false
 gem 'simplecov-console', require: false
