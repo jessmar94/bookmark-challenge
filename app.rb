@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require './lib/bookmark'
 require 'pg'
+require './database_connection_setup' 
 
 class Bookmarks < Sinatra::Base
   enable :method_override
@@ -29,7 +30,7 @@ class Bookmarks < Sinatra::Base
   end
 
   get '/bookmarks/:id/edit' do
-    @bookmark = Bookmark.find(id: params[:id]) 
+    @bookmark = Bookmark.find(id: params[:id])
     erb :'bookmarks/edit'
   end
 
