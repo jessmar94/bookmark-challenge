@@ -42,6 +42,26 @@
         null,
         null
       ],
+      "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/features/update_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/jessicamarais/Makers/Makers_Week4/bookmark-challenge/spec/features/viewing_bookmarks_spec.rb": [
         1,
         null,
@@ -111,9 +131,34 @@
         1,
         null,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1570636926
+    "timestamp": 1570700491
   }
 }

@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './lib/bookmark'
+require 'pg'
 
 class Bookmarks < Sinatra::Base
   enable :method_override
@@ -24,6 +25,16 @@ class Bookmarks < Sinatra::Base
 
   delete '/bookmarks/:id' do
     Bookmark.delete(id: params[:id])
+    redirect '/bookmarks'
+  end
+
+  get '/bookmarks/:id/edit' do
+    @bookmark = Bookmark.find(id: params[:id]) 
+    erb :'bookmarks/edit'
+  end
+
+  patch '/bookmarks/:id' do
+    Bookmark.update(id: params[:id], url: params[:url], title: params[:title])
     redirect '/bookmarks'
   end
 

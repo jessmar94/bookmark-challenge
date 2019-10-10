@@ -42,3 +42,13 @@ I would like to add the site's address and title to bookmark manager
 As a user,
 So that I can remove a bookmark
 I would like to add a delete button that removes bookmarks
+
+# User Story 4
+As a user
+So I can change a bookmark in Bookmark Manager
+I want to update a bookmark
+
+User flow:
+1. Visit 'update bookmark' form for a particular bookmark
+2. Fill in the form with new data and submit it
+3. See the homepage with the updated title/url
