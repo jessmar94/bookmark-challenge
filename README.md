@@ -38,10 +38,21 @@ I would like to add the site's address and title to bookmark manager
 
 | bookmark | <-- add
 
+User flow:
+1. Visit page /bookmarks/new
+2. Type URl and title into a form
+3. Submit the form
+4. See the new book on /bookmarks page
+
 # User Story 3
 As a user,
 So that I can remove a bookmark
 I would like to add a delete button that removes bookmarks
+
+User flow:
+1. Visit bookmarks page
+2. Click a delete button next to a bookmark
+3. See the bookmarks page without that bookmark 
 
 # User Story 4
 As a user
