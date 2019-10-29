@@ -6,11 +6,22 @@
 2. Create the database using the ```psql``` command ```CREATE DATABASE bookmark_manager;```
 3. Connect to the database using the ```psql``` command ```\c bookmark_manager;```
 4. Run the query we have saved in the file ```01_create_bookmarks_table.sql```  
+
 ### Bookmark Manager Test
 1. Connect to ```psql```
 2. Create the database using the ```psql``` command ```CREATE DATABASE bookmark_manager_test;```
 3. Connect to the database using the ```psql``` command ```\c bookmark_manager_test;```
 4. Run the query we have saved in the file ```01_create_bookmarks_table.sql```  
+
+### Comments Table
+1. Connect to ```psql```
+2. Connect to the database using the ```psql``` command ```\c bookmark_manager_test;```
+3. Run the query we have saved in the file ```03_create_comments_table.sql```  
+
+### Comments Table
+1. Connect to ```psql```
+2. Connect to the database using the ```psql``` command ```\c bookmark_manager;```
+3. Run the query we have saved in the file ```03_create_comments_table.sql```
 
 ## User Story 1
 As a user,
@@ -72,4 +83,12 @@ I want to see an error message when I enter an invalid URL
 User flow:
 1. Visit the new bookmark page
 2. Submit a new bookmark with an invalid url
-3. See an error message and don't see the invalid bookmark in the full list of bookmarks 
+3. See an error message and don't see the invalid bookmark in the full list of bookmarks
+
+# User Story 6
+As a user
+So I can make notes about my bookmark
+I want to add a comment to a bookmark
+
+- A bookmark can have many comments --> one-many relationship 
+- A comment belongs to a bookmark

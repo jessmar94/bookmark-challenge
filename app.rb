@@ -4,6 +4,7 @@ require './lib/bookmark'
 require 'pg'
 require './database_connection_setup'
 require 'uri'
+require './lib/comment'
 
 class Bookmarks < Sinatra::Base
   enable :method_override, :sessions
@@ -23,7 +24,7 @@ class Bookmarks < Sinatra::Base
   end
 
   post '/bookmarks' do
-    flash[:notice] = "You must submit a valid URL" unless Bookmark.create(url: params[:url], title: params[:title]) 
+    flash[:notice] = "You must submit a valid URL" unless Bookmark.create(url: params[:url], title: params[:title])
     redirect '/bookmarks'
   end
 
@@ -39,6 +40,18 @@ class Bookmarks < Sinatra::Base
 
   patch '/bookmarks/:id' do
     Bookmark.update(id: params[:id], url: params[:url], title: params[:title])
+    redirect '/bookmarks'
+  end
+
+  get '/bookmarks/:id/comments/new' do
+    @bookmark_id = params[:id]
+    erb :'comments/new'
+  end
+
+  post '/bookmarks/:id/comments' do
+    Comment.create(text: params[:comment], bookmark_id: params[:id])
+    # connection = PG.connect(dbname: 'bookmark_manager_test')
+    # connection.exec("INSERT INTO comments (text, bookmark_id) VALUES('#{params[:comment]}', '#{params[:id]}');")
     redirect '/bookmarks'
   end
 

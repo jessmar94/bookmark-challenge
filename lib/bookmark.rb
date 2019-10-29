@@ -1,3 +1,6 @@
+require_relative './comment.rb'
+require_relative 'database_connection'
+
 class Bookmark
 
   attr_reader :id, :title, :url
@@ -9,7 +12,7 @@ class Bookmark
   end
 
   def self.all
-    result = DatabaseConnection.query('SELECT * FROM bookmarks')
+    result = DatabaseConnection.query('SELECT * FROM bookmarks;')
 
     result.map do |bookmark|
       Bookmark.new(id: bookmark['id'], title: bookmark['title'], url: bookmark['url'])
@@ -38,6 +41,10 @@ class Bookmark
 
     result = DatabaseConnection.query("SELECT * FROM bookmarks WHERE ID = '#{id}';")
     Bookmark.new(id: result[0]['id'], title: result[0]['title'], url: result[0]['url'])
+  end
+
+  def comments(comment_class = Comment)
+    comment_class.where(bookmark_id: id)
   end
 
   private

@@ -11,11 +11,19 @@
       <form action="/bookmarks/<%= bookmark.id %>/edit" method="get">
           <input type="submit" value="Edit" />
       </form>
+      <form action="/bookmarks/<%= bookmark.id %>/comments/new" method="get">
+          <input type="submit" value="Add comment" />
+      </form>
+      <ul>
+        <% bookmark.comments.each do |comment| %>
+          <li><%= comment.text %></li>
+        <% end %>
     </li>
   <% end %>
-  <form action="/bookmarks/new">
-    <input type="submit" value="Add bookmark">
-  </form>
+
+<form action="/bookmarks/new">
+  <input type="submit" value="Add bookmark">
+</form>
 </ul>
 
 <p>

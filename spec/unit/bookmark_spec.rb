@@ -1,12 +1,13 @@
 require 'bookmark'
-require 'database_helpers_spec'
-
+require 'database_helpers'
 
 describe Bookmark do
 
+  let(:comment_class) { double(:comment_class) }
+
   describe '.all' do
     it 'returns all the bookmarks' do
-      connection = PG.connect(dbname: 'bookmark_manager_test')
+      # connection = PG.connect(dbname: 'bookmark_manager_test')
 
       bookmark = Bookmark.create(url: 'http://www.google.com', title: 'Google')
       Bookmark.create(url: 'http://www.facebook.com', title: 'Facebook')
@@ -76,6 +77,21 @@ describe Bookmark do
       expect(result.id).to eq bookmark.id
       expect(result.title).to eq 'BBC'
       expect(result.url).to eq 'http://www.bbc.co.uk'
+    end
+  end
+
+  describe '#comments' do
+    it 'calls .where on the Comment class' do
+      bookmark = Bookmark.create(url: 'http://www.google.com', title: 'Google')
+      expect(comment_class).to receive(:where).with(bookmark_id: bookmark.id)
+
+      bookmark.comments(comment_class)
+    end
+    it 'returns a list of comments on the bookmark' do
+      bookmark = Bookmark.create(url: 'http://www.google.com', title: 'Google')
+      DatabaseConnection.query("INSERT INTO comments (id, text, bookmark_id) VALUES(1, 'Test comment', #{bookmark.id})")
+      comment = bookmark.comments.first
+      expect(comment['text']).to eq 'Test comment'
     end
   end
 end
